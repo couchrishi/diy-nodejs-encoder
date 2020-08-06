@@ -4,16 +4,16 @@ env: flex
 
 # Update with Redis instance details
 env_variables:
-  REDISHOST: '10.249.246.83'
-  REDISPORT: '6379'
-  DB_USER: 'root'
-  DB_PASS: 'saibalaji'
-  DB_NAME: 'encoderjobs'
-  INSTANCE_CONNECTION_NAME: 'saibalaji-scratchpad:us-central1:encoder-status-db'
-  SOCKET_PATH: '/cloudsql/saibalaji-scratchpad:us-central1:encoder-status-db'
+  REDISHOST: ''
+  REDISPORT: ''
+  DB_USER: ''
+  DB_PASS: ''
+  DB_NAME: ''
+  INSTANCE_CONNECTION_NAME: ''
+  SOCKET_PATH: ''
 
 beta_settings:
-    cloud_sql_instances: 'saibalaji-scratchpad:us-central1:encoder-status-db'
+    cloud_sql_instances: ''
 
 resources:
   cpu: 4
