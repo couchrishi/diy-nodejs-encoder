@@ -1,0 +1,32 @@
+service: node-encoder
+runtime: custom
+env: flex
+
+# Update with Redis instance details
+env_variables:
+  REDISHOST: '10.249.246.83'
+  REDISPORT: '6379'
+  DB_USER: 'root'
+  DB_PASS: 'saibalaji'
+  DB_NAME: 'encoderjobs'
+  INSTANCE_CONNECTION_NAME: 'saibalaji-scratchpad:us-central1:encoder-status-db'
+  SOCKET_PATH: '/cloudsql/saibalaji-scratchpad:us-central1:encoder-status-db'
+
+beta_settings:
+    cloud_sql_instances: 'saibalaji-scratchpad:us-central1:encoder-status-db'
+
+resources:
+  cpu: 4
+  memory_gb: 26
+  disk_size_gb: 20
+
+automatic_scaling:
+  min_num_instances: 4
+  max_num_instances: 15
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.6
+
+# Update with Redis instance network name
+network:
+  name: default

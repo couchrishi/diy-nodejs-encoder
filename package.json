@@ -1,0 +1,31 @@
+{
+  "name": "encoder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^2.3.0",
+    "@google-cloud/storage": "^5.1.2",
+    "EventEmitter": "^1.0.0",
+    "dotenv": "^8.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "mysql2": "^2.1.0",
+    "pino": "^6.4.1",
+    "pino-pretty": "^4.1.0",
+    "redis": "^3.0.2",
+    "request": "^2.88.2",
+    "requests": "^0.3.0",
+    "sequelize": "^6.3.4",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
